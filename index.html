@@ -1,0 +1,42 @@
+<html>
+<head>
+
+  <title>Hacker News Viewer</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css">
+  <link href="css/app.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/javascript" src="minimal_viewer.js"></script>
+  <script type="text/javascript">
+    MinimalViewer.initialize(
+      '#root',
+      [
+        {
+          title: 'Meneame',
+          identifier: 'meneame',
+          url: 'https://fierce-beach-58574.herokuapp.com/',
+          relations: {
+            ElementKey: 'url',
+            Title: 'title',
+            Subtitle: 'description',
+            Link: 'url'
+          },
+          color: 'black'
+        }
+      ]
+    )
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-87346812-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
